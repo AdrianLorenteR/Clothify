@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <main>
+        <section class="contacto-section">
+            <div class="contacto-layout">
+                <div class="contacto-col-izq">
+                    <h2>Contacto y ubicación</h2>
+                    <aside class="contacto-info">
+                    <h3>Datos de la empresa</h3>
+                    <div class="contacto-datos">
+                        <p class="contacto-nombre"> <strong>Tienda</strong></p>
+                        <p class="contacto-direccion"> <span class="icono">📍</span> Calle Real 123, 11100 San Fernando (Cádiz)
+                        </p>
+                        <p class="contacto-telefono">
+                            <span class="icono">📞</span> <a href="tel:+3494782736">+34 947 482 736</a>
+                        </p>
+                        <p class="contacto-email">
+                            <span class="icono">✉️</span> <a href="mailto:info@proyecto.com">info@tienda.com</a>
+                        </p>
+                        <p class="contacto-horario">
+                            <span class="icono">🕐</span> Lunes a Viernes: 10:00 a 20:00 | Sábado: 10:00 a 20:00
+                        </p>
+                    </div>
+                    <button type="button" id="btn-ruta" class="btn-ruta">Cómo llegar desde mi ubicación</button>
+                    </aside>
+                </div>
+
+                <div class="mapa-wrapper">
+                    <div id="map-container"></div>
+                    <p class="mapa-leyenda">Marcador: ubicación de la empresa. Usa el botón para calcular la ruta hasta ti.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Proyecto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

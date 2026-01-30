@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <nav class="header-nav header-nav--left" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#cta">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#hero" class="header-logo">Clothify</a>
+            <nav class="header-nav header-nav--right" aria-label="Navegación secundaria">
+                <ul>
+                    <li><a href="presupuesto.html">Presupuesto</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-scroll" class="main-scroll">
+        <!-- Sección 1 con video de fondo -->
+        <section id="hero" class="landing-section hero-section">
+            <div class="hero-video-wrap" aria-hidden="true">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <div class="hero-video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h2>Bienvenidos</h2>
+                <p>Descubre nuestros productos y mantente al día con las últimas novedades.</p>
+            </div>
+        </section>
+
+        <!-- Sección 2:Sobre nosotros -->
+        <section id="sobre-nosotros" class="landing-section about-section">
+            <div class="about-bg-wrap" aria-hidden="true"></div>
+            <div class="about-bg-overlay"></div>
+            <div class="section-inner section-inner--about">
+                <p class="about-label">La marca</p>
+                <h2 class="about-title">Sobre Clothify</h2>
+                <p class="about-desc">
+                    Clothify nace de la convicción de que la moda debe ser atemporal, honesta y accesible. 
+                    Diseñamos prendas que trascienden tendencias y acompañan tu día a día con sencillez y calidad.
+                </p>
+                <dl class="about-values">
+                    <dt>Artesanía</dt>
+                    <dd>Detalle, materiales cuidados y procesos responsables en cada pieza.</dd>
+                    <dt>Sostenibilidad</dt>
+                    <dd>Compromiso con cadenas de suministro transparentes y decisiones conscientes.</dd>
+                    <dt>Atemporalidad</dt>
+                    <dd>Diseños que perduran más allá de la temporada.</dd>
+                    <dt>Autenticidad</dt>
+                    <dd>Una voz propia, sin excesos: moda que se siente honesta.</dd>
+                </dl>
+                <div class="about-vision">
+                    <p class="about-vision-label">Visión</p>
+                    <p class="about-vision-text">
+                        Queremos ser la marca de referencia para quien busca ropa contemporánea, 
+                        bien hecha y con propósito: menos ruido, más esencia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Noticias (cargadas desde data/noticias.json) -->
+        <section id="noticias" class="landing-section noticias-section">
+            <div class="noticias-bg-wrap" aria-hidden="true"></div>
+            <div class="noticias-bg-overlay"></div>
+            <div class="section-inner noticias-inner">
+            <h2>Noticias</h2>
+            <div id="noticias-container" class="noticias-container">
+                <p class="noticias-loading" aria-live="polite">Cargando noticias…</p>
+            </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Contacto -->
+        <section id="cta" class="landing-section cta-section">
+            <div class="section-inner section-inner--narrow">
+            <h2>¿Empezamos?</h2>
+            <p>Da el primer paso y contacta con nosotros.</p>
+            <a href="contacto.html" class="btn btn-cta">Contactar ahora</a>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Proyecto. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
