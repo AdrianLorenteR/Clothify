@@ -1,0 +1,129 @@
+/* Contacto - Mapa y datos de la empresa */
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.82),
+            rgba(255, 255, 255, 0.82)
+        ),
+        url('../img/calle.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem;
+}
+
+.contacto-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.contacto-layout {
+    display: grid;
+    grid-template-columns: minmax(260px, 320px) 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .contacto-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contacto-col-izq {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-col-izq h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Panel de datos de contacto */
+.contacto-info {
+    background: rgba(248, 250, 252, 0.95);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contacto-info h3 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+}
+
+.contacto-datos {
+    margin-bottom: 1rem;
+}
+
+.contacto-datos p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.contacto-datos .icono {
+    margin-right: 0.35rem;
+}
+
+.contacto-datos a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contacto-datos a:hover {
+    text-decoration: underline;
+}
+
+.btn-ruta {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+    color: #fff;
+    background: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-ruta:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.btn-ruta:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Contenedor del mapa */
+.mapa-wrapper {
+    min-height: 560px;
+}
+
+#map-container {
+    width: 100%;
+    height: 560px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background: #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.mapa-leyenda {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #64748b;
+}
