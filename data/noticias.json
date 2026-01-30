@@ -1,0 +1,19 @@
+{
+    "noticias": [
+        {
+            "titulo": "Nueva colección",
+            "fecha": "2026-01-08",
+            "contenido": "Lanzamiento de la colección de primavera/verano. Más información en la tienda online"
+        },
+        {
+            "titulo": "Campaña",
+            "fecha": "2026-01-09",
+            "contenido": "Presentación de la campaña de la marca para el año 2026"
+        },
+        {
+            "titulo": "Colaboración",
+            "fecha": "2026-01-10",
+            "contenido": "Anuncio de colaboración con otra marca. Clothify y Apple llegan a un acuerdo para lanzar una página web oficial sobre productos informáticos. Para más ayuda visite Presupuesto "
+        }
+    ]
+}
